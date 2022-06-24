@@ -2,11 +2,22 @@
 
 :root{
     /* typography */
-    --fs-normal: 1.25rem;
-    --fs-h1: 2rem;
-    --fs-h2: 1.5rem;
+    --XXS: calc(var(--M) / 2);
+    --XS: calc(var(--M) * 3 / 4);
+    --S: calc(var(--M) * 7 / 8);
+    --M: 1rem;
+    --L: calc(var(--M) * 3 / 2);
+    --XL: calc(var(--M) * 2);
+    --XXL: calc(var(--M) * 4);
+
+    --fw-h1:400;
+    --fw-b:100;
 
     /*colors*/
+    --background:hsla(207, 15%, 15%, 1);
+    --element-active: hsla(207, 65%, 45%, 1);
+    --c-h:#fff;
+    --c-p:#818D98;
 }
 
 *{
@@ -16,8 +27,42 @@
 }
 
 body{
-    background-color: #21272C;
+    background-color: var(--background) ;
     color:white;
-    font-family:  'Montserrat', sans-serif; 
+    font-family:  'Gilroy Light', sans-serif;
 }
+
+header{
+    margin: 0 auto;
+
+   display:flex;
+   justify-content: center;
+   align-items: center;
+
+
+   height: var(--XXL);
+   width:90%;
+   color: var(--c-p);
+}
+
+a.lightmode{
+    width: 100%;
+    margin-left: 0
+}
+
+a.lightmode:hover{
+    cursor: pointer;
+    color:var(--element-active);
+}
+
+div.contact{
+    display: inline-block;
+    margin-right:0;  
+}
+
+i{
+    display: inline-block;
+    margin:10%;
+}
+
 
