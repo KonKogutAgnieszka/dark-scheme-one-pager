@@ -26,6 +26,7 @@ html{
     --fw-b:100;
 
     /*colors*/
+    --graphic: hsla(207, 20%, 13%, 1);
     --background:hsla(207, 15%, 15%, 1);
     --element-active: hsla(207, 65%, 45%, 1);
     --element-interactive:hsla(335, 85%, 45%, 1);
@@ -93,32 +94,7 @@ i:hover{
     transform: scale(1.1);
 }
 
-/*WRAPER*/
-
-/* ABOUT */
-
-content.fadeUp{
-    animation: fadeUp 1.4s ease;
-    opacity: 100%; 
-}
-
-section.about{
-    margin:0 auto;
-
-   display:flex;
-   justify-content: center;
-   flex-direction: column; 
-
-   width:90%;
-}
-
-svg{
-    height: auto;
-    fill-rule: evenodd;
-    clip-rule: evenodd;
-    stroke-linejoin: round;
-    stroke-miterlimit: 2;  
-}
+/*ogólne*/
 
 h1{
     margin-bottom: var(--M);
@@ -130,10 +106,11 @@ h1{
     font-weight: 400;
 }
 
-span.decoration{
-    background-image: linear-gradient(100deg, var(--element-active) 0%, var(--element-interactive) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+h2{
+    font-size: var(--L);
+    line-height: 1.5;
+    margin-bottom: var(--M);
+    font-weight: 400;
 }
 
 p{
@@ -142,6 +119,17 @@ p{
     line-height:1.75;
     margin-bottom: var(--M);
 }
+
+/* dekoracja tekstu */
+
+span.decoration{
+    font-weight: 600;
+    background-image: linear-gradient(100deg, var(--element-active) 0%, var(--element-interactive) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* link */
 
 a.underline{
     position: relative;
@@ -174,5 +162,77 @@ a.underline:hover{
  a.underline:hover:after{
     background-position-x:100%;
 }
+
+svg{
+    width: 100%;
+    height: auto;
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    stroke-linejoin: round;
+    stroke-miterlimit: 2;
+}
+
+
+
+/* sekcje*/
+
+section{
+    margin:0 auto;
+    width:90%;
+    margin-top: calc(2 * var(--XXL))
+}
+
+section.about{
+   display:flex;
+   justify-content: center;
+   flex-direction: column; 
+}
+
+/* graphics */
+
+div.graphic{
+    width:100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+}
+
+.graphic p:first-of-type{
+    grid-column: span 2;
+}
+
+.graphic p:nth-of-type(2){
+    grid-column: span 1;
+    justify-self: end;
+}
+
+.graphic p:nth-of-type(5){
+    justify-self: end;
+}
+
+.graphic svg{
+    grid-column: 1 / -1;
+    padding: var(--L) 0;
+    stroke: var(--text-color-sub);
+    stroke-width: 1;
+    transition: stroke .3s ease;
+}
+
+/* stack */
+
+div.stack{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.item{
+    grid-column: span 1;
+    background-color:var(--graphic);
+    padding: var(--M);
+    border-radius: var(--XXS);
+    margin-bottom: var(--M);
+}
+
+
 
 
