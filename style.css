@@ -63,6 +63,7 @@ header{
    height: var(--XXL);
    width:90%;
    color: var(--text-color);
+
 }
 
 a.lightmode{
@@ -181,7 +182,11 @@ svg{
 section{
     margin:0 auto;
     width:90%;
-    margin-top: calc(2 * var(--XXL))
+    margin-top: calc(2 * var(--XXL));
+
+    
+   animation-name: fadeIn;
+   animation-duration: 1s;
 }
 
 section.about{
@@ -298,3 +303,16 @@ a.cv{
 }
 
 
+/* enter animation */ 
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0%;
+        transform: translateY(10%);
+    }
+
+    100%{
+        opacity: 100%;
+        transform: translateY(0%);
+    }
+}
