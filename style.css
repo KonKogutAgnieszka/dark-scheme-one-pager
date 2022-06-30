@@ -32,7 +32,7 @@ html{
     --element-interactive:hsla(335, 85%, 45%, 1);
     --element-interactive-sub: hsla(335, 85%, 45%, .5);
     --heading-color:#fff;
-    --text-color:#818D98;
+    --text-color:hsla(207, 15%, 65%, 1);
 }
 
 ::-webkit-scrollbar {
@@ -292,12 +292,13 @@ padding-top:10px;
 
 h2.signature{
 font-size: var(--M);
+color:var(--text-color);
 }
 
 a.cv{
     display: inline-block;
     text-decoration: none;
-    color:var(--text-color);
+    color:var(--heading-color);
     font-size: var(--M);
     font-weight: lighter;
 }
