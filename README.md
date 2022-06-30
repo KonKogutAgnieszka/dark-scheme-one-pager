@@ -1,6 +1,6 @@
 # dark scheme one pager
 > training project
-> Live demo [_here_](https://www.example.com).
+> Live demo [_here_](https://konkogutagnieszka.github.io/dark-scheme-one-pager/).
 
 ## Table of Contents
 * [General Info](#general-information)
