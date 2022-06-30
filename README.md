@@ -1,5 +1,5 @@
 # dark scheme one pager
-> training project
+> clone - training project
 > Live demo [_here_](https://konkogutagnieszka.github.io/dark-scheme-one-pager/).
 
 ## Table of Contents
@@ -14,22 +14,30 @@
 
 ## General Information
 Project I did after advanced CSS course to improve and soldify my flexbox skills.
-inspired: https://onepagelove.com/jacob-stahl
+original: https://onepagelove.com/jacob-stahl
+
+what I've learn:
+*responsive flexbox,
+*responsive typography with variables in CSS
+*how to make light mode/dark mode switch,
+
+
 
 ## Technologies Used
-HTML CSS
+HTML CSS JS
 
 ## Project Status
-Project is: _in progress_ 
+Project is: _finished_ 
 
 
 ## Room for Improvement
 Project could be created with CSS grid;
 
 Room for improvement:
--style all sections,
 -do the same page with CSS grid
 
 ## Acknowledgements
 Give credit here.
 - This project was inspired by https://onepagelove.com/jacob-stahl
+
+I DO NOT OWN THIS PROJECT/DESIGN
