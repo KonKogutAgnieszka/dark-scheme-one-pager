@@ -153,6 +153,8 @@ a.underline::after{
     background-size: 200%;
     background-position-x: 200%;
     transition:all .3s ease;
+
+    z-index: -1;
 }
 
 a.underline:hover{
@@ -183,6 +185,7 @@ section{
 }
 
 section.about{
+    margin-top:45vh;
    display:flex;
    justify-content: center;
    flex-direction: column; 
@@ -218,12 +221,42 @@ div.graphic{
     transition: stroke .3s ease;
 }
 
+div.blank{
+    height: 200px;
+    width:100%;
+    grid-column: span 3;
+}
+
 /* stack */
 
 div.stack{
+    margin:0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap:4%;
 }
+
+@media (max-width: 1280px){
+    div.stack{
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 635px){
+    div.stack{
+        grid-template-columns: 1fr; 
+}
+}
+
+div.stack h3{
+    color: var(--text-color);
+}
+
+div.stack h3:hover{
+    color: white;
+}
+
+
 
 .item{
     grid-column: span 1;
@@ -233,6 +266,35 @@ div.stack{
     margin-bottom: var(--M);
 }
 
+/* footer */
 
+footer::before{
+    margin: 0 auto;
+    
+}
+
+footer{
+margin: 5vh auto 0;
+    
+display: flex;
+width: 90%;
+justify-content: space-between;
+align-items: center;
+
+border-top:10px solid var( --graphic);
+padding-top:10px;
+}
+
+h2.signature{
+font-size: var(--M);
+}
+
+a.cv{
+    display: inline-block;
+    text-decoration: none;
+    color:var(--text-color);
+    font-size: var(--M);
+    font-weight: lighter;
+}
 
 
