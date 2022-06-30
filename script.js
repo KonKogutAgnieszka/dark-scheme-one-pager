@@ -32,7 +32,7 @@ const darkColors = {
     '--element-interactive': 'hsla(335, 85%, 45%, 1)',
     '--element-interactive-sub': 'hsla(335, 85%, 45%, .5)',
     '--heading-color': '#fff',
-    '--text-color': '#hsla(207, 15%, 65%, 1)',
+    '--text-color': 'hsla(207, 15%, 65%, 1)',
 }
 
 const lightColors = {
